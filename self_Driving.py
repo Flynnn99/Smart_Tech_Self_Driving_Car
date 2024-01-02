@@ -13,7 +13,7 @@ sio = socketio.Server()
 app = Flask(__name__) 
 
 
-speed_limit = 15
+speed_limit = 20
 
 def img_preprocess(img):
     img = img[60:135, :, :]
@@ -30,16 +30,16 @@ def connect(sid, environ):
 
 @sio.on('telemetry')
 def telemetry(sid, data):
-    if data:
-        image = Image.open(BytesIO(base64.b64decode(data['image'])))
-        image = np.asarray(image)
-        image = img_preprocess(image)
-        image = np.array([image])
-        steering_angle = float(model.predict(image))
-        speed = float(data['speed'])
-        
-        throttle = min((1.0 - abs(steering_angle), (1-speed/speed_limit)))
-        send_control(steering_angle, throttle)
+    image = Image.open(BytesIO(base64.b64decode(data['image'])))
+    image = np.asarray(image)
+    image = img_preprocess(image)
+    image = np.array([image])
+    speed = float(data['speed'])
+    steering_angle = float(model.predict(image))
+    throttle = 1.0 - speed/speed_limit
+    print('{} {} {}'.format(steering_angle, throttle, speed_limit))
+    send_control(steering_angle, throttle)
+
 
     
 def send_control(steering_angle, throttle):
