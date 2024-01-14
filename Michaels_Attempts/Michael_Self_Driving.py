@@ -40,6 +40,7 @@ def preprocess_img(img):
   img = cv2.cvtColor(img,cv2.COLOR_RGB2YUV)
   img = cv2.GaussianBlur(img,(3,3),0)
   img = cv2.resize(img, (200,66))
+
   img = img/255
   return img
 
@@ -130,7 +131,7 @@ data['left'] = data['left'].apply(path_leaf)
 data['right'] = data['right'].apply(path_leaf)
 
 num_bins = 25
-samples_per_bin = 400
+samples_per_bin = 200
 hist,bins = np.histogram(data['steering'],num_bins)
 centre = (bins[:-1] + bins[1:]) * 0.5
 plt.bar(centre, hist, width=0.05)
@@ -243,8 +244,8 @@ plt.show()
 model = nvidia_model()
 print(model.summary())
 
-history = model.fit(batch_generator(X_train, y_train, 800, 1),
-                    steps_per_epoch=200,epochs=50,
+history = model.fit(batch_generator(X_train, y_train, 200, 1),
+                    steps_per_epoch=150,epochs=30,
                     validation_data=batch_generator(X_valid, y_valid, 200, 0),
                     validation_steps=200,verbose=1,shuffle=1)
 
@@ -255,4 +256,4 @@ plt.title('Loss')
 plt.xlabel('Epoch')
 plt.show()
 
-model.save('Michaels_model.h5')
+model.save('trackOne_model.h5')
