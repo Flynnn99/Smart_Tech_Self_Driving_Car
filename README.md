@@ -7,7 +7,7 @@ This project involves training a self-driving car to navigate two distinct track
 
 ## Data Collection 📊
 - Link to Uploaded Data: [Training Data](https://github.com/KyleMcQ/Images_CA2) (Kyle's)
-- Link to Uploaded Data: [Training Data](https://github.com/Flynn99/images_for_ca2) (Michaels's)
+- Link to Uploaded Data: [Training Data](https://github.com/Flynnn99/images_for_ca2) (Michaels's)
 - We captured images and data at every frame rather than every keystroke. This approach allowed for a more comprehensive dataset.
 - The vehicle was driven around each track at a maximum speed of 15mph, optimizing the efficiency of data collection.
 
