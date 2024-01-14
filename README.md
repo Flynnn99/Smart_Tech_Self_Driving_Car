@@ -21,6 +21,8 @@ This project involves training a self-driving car to navigate two distinct track
 ## Observations and Notes 📝
 - The consistent speed of 15mph ensured uniform data quality.
 - The difference in track complexity provided a diverse range of driving scenarios, crucial for training a robust model.
+- We noted that shadows in track 2 caused the car to avoid them so we needed more data within shadows.
+- We then took note of the surroundings on track 2 and thought how would a real car work. We trained specifically within road lines and stayed away from barriers etc.
 
 ## Conclusion and Future Work 💡
 - The project has laid a strong foundation for developing a reliable self-driving model.
