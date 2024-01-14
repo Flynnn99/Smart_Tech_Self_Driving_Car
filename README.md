@@ -35,5 +35,6 @@ This project involves training a self-driving car to navigate two distinct track
 ---
 
 👥 **Contributors**
-- [Kyle McQ](https://github.com/KyleMcQ) (Project Lead)
+- [Kyle McQuillan](https://github.com/KyleMcQ)
+- [Michael Flynn](https://github.com/Flynnn99) 
 
