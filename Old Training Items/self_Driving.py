@@ -23,6 +23,13 @@ def img_preprocess(img):
     img = img/255
     return img
 
+def brighten_process(img):
+    img = cv2.cvtColor(img, cv2.COLOR_RGB2HSV)
+    random_bright = .25+np.random.uniform()
+    img[:,:,2] = img[:,:,2]*random_bright
+    img = cv2.cvtColor(img, cv2.COLOR_HSV2RGB)
+    return img
+
 @sio.on('connect') # decorator
 def connect(sid, environ):
     print('Connected')
@@ -33,6 +40,7 @@ def telemetry(sid, data):
     image = Image.open(BytesIO(base64.b64decode(data['image'])))
     image = np.asarray(image)
     image = img_preprocess(image)
+    image = brighten_process(image)
     image = np.array([image])
     speed = float(data['speed'])
     steering_angle = float(model.predict(image))
