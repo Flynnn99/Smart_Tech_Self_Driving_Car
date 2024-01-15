@@ -247,7 +247,10 @@ plt.show()
 model = nvidia_model()
 print(model.summary())
 
-history = model.fit(batch_generator(X_train, y_train, 300, 1),steps_per_epoch=150,epochs=30,validation_data=batch_generator(X_valid, y_valid, 300, 0),validation_steps=200,verbose=1,shuffle=1)
+history = model.fit(batch_generator(X_train, y_train, 300, 1),
+                    steps_per_epoch=150,epochs=30,
+                    validation_data=batch_generator(X_valid, y_valid, 300, 0),
+                    validation_steps=200,verbose=1,shuffle=1)
 
 plt.plot(history.history['loss'])
 plt.plot(history.history['val_loss'])
