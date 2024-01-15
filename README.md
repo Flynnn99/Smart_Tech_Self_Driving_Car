@@ -33,12 +33,6 @@ This project involves training a self-driving car to navigate two distinct track
 
 ---
 
-🔗 **Links & Resources**
-- [GitHub Repository](https://github.com/KyleMcQ/Images_CA2)
-- [Track 2 Video](https://www.youtube.com/embed/3lzRTfwq0kI?si=gXJgatAZqmMzAT3N)
-
----
-
 👥 **Contributors**
 - [Kyle McQuillan](https://github.com/KyleMcQ)
 - [Michael Flynn](https://github.com/Flynnn99) 
