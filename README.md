@@ -14,10 +14,13 @@ This project involves training a self-driving car to navigate two distinct track
 ## Track Details 🛣️
 ### Track 1
 - A standard oval track designed to test basic navigation and speed control.
-  
+- Watch the Track 1 experience: [Track 1 Video](https://www.youtube.com/embed/M5rZPQ5IoYc?si=yIbXPffJpFS2GeZu)
 ### Track 2
 - A more complex layout with varied turns and elevations.
-- Watch the Track 2 experience: [Track 2 Video](https://www.youtube.com/embed/3lzRTfwq0kI?si=gXJgatAZqmMzAT3N)
+- Watch the Track 2 experience: [Track 2 Video](https://www.youtube.com/embed/cMZVm0HZFXQ?si=d0wwT-OuvzA5UBq-)
+
+### Video of both tracks on one model
+- Combination [Video](https://youtu.be/YNzwCwgbbdY)
 
 ## Observations and Notes 📝
 - The consistent speed of 15mph ensured uniform data quality.
@@ -28,12 +31,6 @@ This project involves training a self-driving car to navigate two distinct track
 ## Conclusion and Future Work 💡
 - The project has laid a strong foundation for developing a reliable self-driving model.
 - Future work will focus on refining the AI algorithms to handle more unpredictable environments.
-
----
-
-🔗 **Links & Resources**
-- [GitHub Repository](https://github.com/KyleMcQ/Images_CA2)
-- [Track 2 Video](https://www.youtube.com/embed/3lzRTfwq0kI?si=gXJgatAZqmMzAT3N)
 
 ---
 
