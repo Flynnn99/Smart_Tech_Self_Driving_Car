@@ -19,7 +19,8 @@ This project involves training a self-driving car to navigate two distinct track
 - A more complex layout with varied turns and elevations.
 - Watch the Track 2 experience: [Track 2 Video](https://www.youtube.com/embed/cMZVm0HZFXQ?si=d0wwT-OuvzA5UBq-)
 
-
+### Video of both tracks on one model
+- Combination [Video](https://youtu.be/YNzwCwgbbdY)
 
 ## Observations and Notes 📝
 - The consistent speed of 15mph ensured uniform data quality.
